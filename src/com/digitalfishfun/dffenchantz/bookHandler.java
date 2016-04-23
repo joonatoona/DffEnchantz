@@ -48,8 +48,8 @@ public class bookHandler implements Listener {
 
     @EventHandler
     public void interactHandler(PlayerInteractEvent event) {
-        if (event.getItem().getType() == Material.ENCHANTED_BOOK &&
-                event.getItem().getItemMeta().getDisplayName() == "§7Plebby Enchant Book (RIGHT CLICK)") {
+        if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.ENCHANTED_BOOK &&
+                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§7Plebby Enchant Book (RIGHT CLICK)")) {
             if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
                 ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
                 ItemMeta newMeta = newBook.getItemMeta();
@@ -62,13 +62,13 @@ public class bookHandler implements Listener {
                 newLore.add(enchantDict.get(cEnchant).toString());
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
-                event.getItem().setAmount(event.getItem().getAmount()-1);
-                event.getPlayer().getInventory().setItemInMainHand(newBook);
+                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                event.getPlayer().getInventory().addItem(newBook);
                 event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
             }
         }
-        if (event.getPlayer().getItemInHand().getType() == Material.ENCHANTED_BOOK &&
-                event.getPlayer().getItemInHand().getItemMeta().getDisplayName() == "§cGod Enchant Book (RIGHT CLICK)") {
+        if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.ENCHANTED_BOOK &&
+                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§cGod Enchant Book (RIGHT CLICK)")) {
             if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
                 ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
                 ItemMeta newMeta = newBook.getItemMeta();
@@ -81,7 +81,8 @@ public class bookHandler implements Listener {
                 newLore.add(enchantDict.get(cEnchant).toString());
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
-                event.getPlayer().getInventory().setItemInMainHand(newBook);
+                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                event.getPlayer().getInventory().addItem(newBook);
                 event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
             }
         }
