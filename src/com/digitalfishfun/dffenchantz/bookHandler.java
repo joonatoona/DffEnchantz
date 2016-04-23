@@ -40,28 +40,37 @@ public class bookHandler implements Listener {
         enchantDict.put("§7SILK_TOUCH", toolEnchant);
         enchantDict.put("§7LOOT_BONUS_MOBS", weaponEnchant);
         enchantDict.put("§7LOOT_BONUS_BLOCKS", toolEnchant);
+        enchantDict.put("§7DIG_SPEED", toolEnchant);
         enchantDict.put("§7PROTECTION_ENVIRONMENTAL", gearEnchant);
+        enchantDict.put("§7KNOCKBACK", allEnchant);
+        enchantDict.put("§eWither", weaponEnchant);
         enchantDict.put("§cInquisitive", weaponEnchant);
+        enchantDict.put("§cLifesteal", weaponEnchant);
 
         lvlDict.put("§7DAMAGE_ALL", 5);
-        lvlDict.put("§7FIRE_ASPECT", 5);
-        lvlDict.put("§7DURABILITY", 5);
+        lvlDict.put("§7FIRE_ASPECT", 3);
+        lvlDict.put("§7DURABILITY", 4);
         lvlDict.put("§7Glowing", 1);
         lvlDict.put("§7SILK_TOUCH", 1);
-        lvlDict.put("§7LOOT_BONUS_MOBS", 5);
-        lvlDict.put("§7LOOT_BONUS_BLOCKS", 5);
-        lvlDict.put("§7PROTECTION_ENVIRONMENTAL", 5);
+        lvlDict.put("§7LOOT_BONUS_MOBS", 4);
+        lvlDict.put("§7LOOT_BONUS_BLOCKS", 3);
+        lvlDict.put("§7PROTECTION_ENVIRONMENTAL", 4);
+        lvlDict.put("§7DIG_SPEED", 5);
+        lvlDict.put("§7KNOCKBACK", 3);
+        lvlDict.put("§eWither", 3);
         lvlDict.put("§cInquisitive", 5);
+        lvlDict.put("§cLifesteal", 5);
     }
 
     String[] plebEnchants = {"§7DAMAGE_ALL", "§7DURABILITY", "§7FIRE_ASPECT", "§7SILK_TOUCH", "§7LOOT_BONUS_MOBS", "§7LOOT_BONUS_BLOCKS", "§7PROTECTION_ENVIRONMENTAL",
-            "§7Glowing"};
-    String[] godEnchants = {"§cInquisitive"};
+            "§7Glowing", "§7DIG_SPEED", "§7KNOCKBACK"};
+    String[] t2Enchants = {"§eWither"};
+    String[] godEnchants = {"§cInquisitive", "§cLifesteal"};
 
     @EventHandler
     public void interactHandler(PlayerInteractEvent event) {
         if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.ENCHANTED_BOOK &&
-                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§7Plebby Enchant Book (RIGHT CLICK)")) {
+                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(customItems.m1book.getItemMeta().getDisplayName())) {
             if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
                 ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
                 ItemMeta newMeta = newBook.getItemMeta();
@@ -80,7 +89,26 @@ public class bookHandler implements Listener {
             }
         }
         if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.ENCHANTED_BOOK &&
-                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§cGod Enchant Book (RIGHT CLICK)")) {
+                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(customItems.m3book.getItemMeta().getDisplayName())) {
+            if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
+                ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
+                ItemMeta newMeta = newBook.getItemMeta();
+                List<String> newLore = new ArrayList<String>();
+                int rndIndex = random.nextInt(t2Enchants.length);
+                String cEnchant = t2Enchants[rndIndex];
+                int rndMax = random.nextInt(lvlDict.get(cEnchant))+1;
+                newMeta.setDisplayName(cEnchant+" "+rndMax+" Book");
+                newLore.add(cEnchant+" "+rndMax);
+                newLore.add(enchantDict.get(cEnchant));
+                newMeta.setLore(newLore);
+                newBook.setItemMeta(newMeta);
+                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                event.getPlayer().getInventory().addItem(newBook);
+                event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
+            }
+        }
+        if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.ENCHANTED_BOOK &&
+                event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(customItems.m5book.getItemMeta().getDisplayName())) {
             if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
                 ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
                 ItemMeta newMeta = newBook.getItemMeta();

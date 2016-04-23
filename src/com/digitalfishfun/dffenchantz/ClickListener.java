@@ -1,5 +1,6 @@
 package com.digitalfishfun.dffenchantz;
 
+import com.mysql.fabric.xmlrpc.base.Array;
 import net.minecraft.server.v1_9_R1.Blocks;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -34,19 +35,21 @@ public class ClickListener implements Listener {
     public static String toolEnchant = "§7[TOOL ENCHANTMENT]";
     public static Map<String, Integer> lvlDict = new HashMap<String, Integer>();
 
-    String[] dfEnchants = {"§7DAMAGE_ALL", "§7DURABILITY", "§7FIRE_ASPECT", "§7SILK_TOUCH", "§7LOOT_BONUS_MOBS", "§7LOOT_BONUS_BLOCKS", "§7PROTECTION_ENVIRONMENTAL"};
-    String[] weapons = {"DIAMOND_SWORD", "GOLD_SWORD", "IRON_SWORD", "STONE_SWORD", "WOOD_SWORD",
+    public static String[] dfEnchants = {"§7DAMAGE_ALL", "§7DURABILITY", "§7FIRE_ASPECT", "§7SILK_TOUCH", "§7LOOT_BONUS_MOBS", "§7LOOT_BONUS_BLOCKS", "§7PROTECTION_ENVIRONMENTAL", "§7KNOCKBACK"};
+    public static String[] weapons = {"DIAMOND_SWORD", "GOLD_SWORD", "IRON_SWORD", "STONE_SWORD", "WOOD_SWORD",
             "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
-    String[] tools = {"DIAMOND_PICKAXE", "GOLD_PICKAXE", "IRON_PICKAXE", "STONE_PICKAXE", "LEATHER_PICKAXE",
+    public static String[] tools = {"DIAMOND_PICKAXE", "GOLD_PICKAXE", "IRON_PICKAXE", "STONE_PICKAXE", "LEATHER_PICKAXE",
             "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
-    String[] helms = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET"};
-    String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE"};
-    String[] legs = {"DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS"};
-    String[] boots = {"DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
-    String[] gear = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET",
+    public static String[] helms = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET"};
+    public static String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE"};
+    public static String[] legs = {"DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS"};
+    public static String[] boots = {"DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
+    public static String[] gear = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET",
             "DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE",
             "DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS",
             "DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
+
+    public static ArrayList<String> allMat = new ArrayList<String>();
 
     static {
         lvlDict.put("§7DAMAGE_ALL", 5);
@@ -54,13 +57,21 @@ public class ClickListener implements Listener {
         lvlDict.put("§7DURABILITY", 5);
         lvlDict.put("§7Glowing", 1);
         lvlDict.put("§7SILK_TOUCH", 1);
+        lvlDict.put("§7DIG_SPEED", 5);
+        lvlDict.put("§7KNOCKBACK", 5);
         lvlDict.put("§7PROTECTION_ENVIRONMENTAL", 5);
+        lvlDict.put("§eWither", 3);
         lvlDict.put("§cInquisitive", 5);
+        lvlDict.put("§cLifesteal", 5);
+
+        allMat.addAll(Arrays.asList(weapons));
+        allMat.addAll(Arrays.asList(tools));
+        allMat.addAll(Arrays.asList(gear));
     }
 
 
 
-    Enchantment enchantment = Enchantment.PROTECTION_ENVIRONMENTAL;
+    Enchantment enchantment = Enchantment.DIG_SPEED;
 
     @EventHandler
     public void onClick(InventoryClickEvent event) {
@@ -72,17 +83,22 @@ public class ClickListener implements Listener {
             //Bukkit.getServer().broadcastMessage("U clikd a " + event.getCursor().getType().toString() + " onto a " + event.getCurrentItem().getType().toString());
             Boolean shouldEnchant = false;
             Boolean combine = false;
-            if (event.getCursor().getType() == Material.ENCHANTED_BOOK) {
+            if (event.getCursor() != null && event.getCursor().getType() == Material.ENCHANTED_BOOK) {
                 if (event.getCursor().getItemMeta().getLore().contains(weaponEnchant) && Arrays.asList(weapons).contains(event.getCurrentItem().getType().toString())) {
                     shouldEnchant = true;
                 }
                 if (event.getCursor().getItemMeta().getLore().contains(helmEnchant) && Arrays.asList(helms).contains(event.getCurrentItem().getType().toString())) {
                     shouldEnchant = true;
                 }
-                if (event.getCursor().getItemMeta().getLore().contains(allEnchant)) {
+                if (event.getCursor().getItemMeta().getLore().contains(allEnchant) && allMat.contains(event.getCurrentItem().getType().toString())) {
                     shouldEnchant = true;
                 }
-                if (event.getCursor().getItemMeta().getLore().contains(toolEnchant) && Arrays.asList(tools).contains(event.getCurrentItem().getType().toString()))
+                if (event.getCursor().getItemMeta().getLore().contains(toolEnchant) && Arrays.asList(tools).contains(event.getCurrentItem().getType().toString())) {
+                    shouldEnchant = true;
+                }
+                if (event.getCursor().getItemMeta().getLore().contains(gearEnchant) && Arrays.asList(gear).contains(event.getCurrentItem().getType().toString())) {
+                    shouldEnchant = true;
+                }
                 if (event.getCurrentItem().getType() == Material.ENCHANTED_BOOK) {
                     combine = true;
                 }

@@ -15,10 +15,12 @@ public class enchantInquis implements Listener {
     @EventHandler
     public void mobKill(EntityDeathEvent event) {
         HelperFuncs helperFuncs = new HelperFuncs();
-        Player player = event.getEntity().getKiller();
-        if (helperFuncs.enchantLvl(helperFuncs.getEnchants(player.getItemInHand()), "§cInquisitive") > 0) {
-            int enchantLvl = helperFuncs.enchantLvl(helperFuncs.getEnchants(player.getItemInHand()), "§cInquisitive");
-            event.setDroppedExp(event.getDroppedExp()*((int)((double) enchantLvl/1.5)));
+        if (event.getEntity().getKiller() != null) {
+            Player player = event.getEntity().getKiller();
+            if (player.getInventory().getItemInMainHand() != null && helperFuncs.enchantLvl(helperFuncs.getEnchants(player.getInventory().getItemInMainHand()), "§cInquisitive") > 0) {
+                int enchantLvl = helperFuncs.enchantLvl(helperFuncs.getEnchants(player.getInventory().getItemInMainHand()), "§cInquisitive");
+                event.setDroppedExp(event.getDroppedExp() * ((int) ((double) enchantLvl / 1.5)));
+            }
         }
     }
 }
