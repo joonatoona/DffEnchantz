@@ -27,6 +27,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ClickListener(), this);
         getServer().getPluginManager().registerEvents(new armorSwap(), this);
         getServer().getPluginManager().registerEvents(new enchantLifesteal(), this);
+        getServer().getPluginManager().registerEvents(new enchantWither(), this);
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new enchantGlowing(), (long) 2, (long) 2);
     }
 

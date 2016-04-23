@@ -1,5 +1,6 @@
 package com.digitalfishfun.dffenchantz;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -24,7 +25,7 @@ public class enchantWither implements Listener {
             if (dmgPlayer.getInventory().getItemInMainHand() != null && helperFuncs.enchantLvl(helperFuncs.getEnchants(dmgPlayer.getInventory().getItemInMainHand()), "§eWither") > 0) {
                 int enchantLvl = helperFuncs.enchantLvl(helperFuncs.getEnchants(dmgPlayer.getInventory().getItemInMainHand()), "§eWither");
                 if (random.nextInt(25/enchantLvl) == 0) {
-                    hitPlayer.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 3, enchantLvl));
+                    hitPlayer.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 3, enchantLvl*100));
                     hitPlayer.playSound(hitPlayer.getLocation(), Sound.ENTITY_WITHER_SPAWN, 100, 100);
                     dmgPlayer.playSound(dmgPlayer.getLocation(), Sound.ENTITY_WITHER_SPAWN, 100, 100);
                 }
