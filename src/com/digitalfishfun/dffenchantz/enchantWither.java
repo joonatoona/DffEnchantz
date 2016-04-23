@@ -25,7 +25,7 @@ public class enchantWither implements Listener {
             if (dmgPlayer.getInventory().getItemInMainHand() != null && helperFuncs.enchantLvl(helperFuncs.getEnchants(dmgPlayer.getInventory().getItemInMainHand()), "§eWither") > 0) {
                 int enchantLvl = helperFuncs.enchantLvl(helperFuncs.getEnchants(dmgPlayer.getInventory().getItemInMainHand()), "§eWither");
                 if (random.nextInt(25/enchantLvl) == 0) {
-                    hitPlayer.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 3, enchantLvl*100));
+                    hitPlayer.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, enchantLvl*20, 2));
                     hitPlayer.playSound(hitPlayer.getLocation(), Sound.ENTITY_WITHER_SPAWN, 100, 100);
                     dmgPlayer.playSound(dmgPlayer.getLocation(), Sound.ENTITY_WITHER_SPAWN, 100, 100);
                 }
