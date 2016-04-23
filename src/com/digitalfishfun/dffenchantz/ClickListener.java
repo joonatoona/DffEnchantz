@@ -26,6 +26,10 @@ public class ClickListener implements Listener {
 
     public static String weaponEnchant = "§7[WEAPON ENCHANTMENT]";
     public static String helmEnchant = "§7[HELMET ENCHANTMENT]";
+    public static String chestplateEnchant = "§7[CHESTPLATE ENCHANTMENT]";
+    public static String legsEnchant = "§7[LEGGINGS ENCHANTMENT]";
+    public static String bootsEnchant = "§7[BOOTS ENCHANTMENT]";
+    public static String gearEnchant = "§7[ARMOR ENCHANTMENT]";
     public static String allEnchant = "§7[ENCHANTMENT]";
     public static String toolEnchant = "§7[TOOL ENCHANTMENT]";
     public static Map<String, Integer> lvlDict = new HashMap<String, Integer>();
@@ -36,10 +40,13 @@ public class ClickListener implements Listener {
     String[] tools = {"DIAMOND_PICKAXE", "GOLD_PICKAXE", "IRON_PICKAXE", "STONE_PICKAXE", "LEATHER_PICKAXE",
             "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
     String[] helms = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET"};
-    String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_HELMET"};
+    String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE"};
     String[] legs = {"DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS"};
     String[] boots = {"DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
-    String[] gear = {};
+    String[] gear = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET",
+            "DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE",
+            "DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS",
+            "DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
 
     static {
         lvlDict.put("§7DAMAGE_ALL", 5);
@@ -49,8 +56,6 @@ public class ClickListener implements Listener {
         lvlDict.put("§7SILK_TOUCH", 1);
         lvlDict.put("§7PROTECTION_ENVIRONMENTAL", 5);
         lvlDict.put("§cInquisitive", 5);
-
-        gear.
     }
 
 

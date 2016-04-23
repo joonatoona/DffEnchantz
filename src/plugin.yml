@@ -5,3 +5,5 @@ main: com.digitalfishfun.dffenchantz.Main
 commands:
   enchant:
     description: Open the enchantment shop
+  givebook:
+    description: Give the specified enchantment book

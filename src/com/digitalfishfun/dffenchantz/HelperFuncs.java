@@ -14,10 +14,12 @@ public class HelperFuncs {
     public ArrayList<String[]> getEnchants(ItemStack item) {
         ArrayList<String[]> cEnchants = new ArrayList<String[]>();
         String[] cParse;
-        for (int i=0; i < item.getItemMeta().getLore().size(); i++) {
-            cParse = item.getItemMeta().getLore().get(i).split(" ");
-            if (cParse.length == 2 && NumberUtils.isNumber(cParse[1])) {
-                cEnchants.add(cParse);
+        if (item.getItemMeta().hasLore()) {
+            for (int i = 0; i < item.getItemMeta().getLore().size(); i++) {
+                cParse = item.getItemMeta().getLore().get(i).split(" ");
+                if (cParse.length == 2 && NumberUtils.isNumber(cParse[1])) {
+                    cEnchants.add(cParse);
+                }
             }
         }
         return cEnchants;
