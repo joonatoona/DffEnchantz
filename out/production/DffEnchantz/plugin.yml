@@ -1,0 +1,7 @@
+name: DffEnchantz
+version: 1.0
+author: joonatoona
+main: com.digitalfishfun.dffenchantz.Main
+commands:
+  enchant:
+    description: Open the enchantment shop
