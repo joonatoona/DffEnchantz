@@ -55,7 +55,7 @@ public class ClickListener implements Listener {
                 ItemStack currentItem = event.getCurrentItem();
                 ItemMeta currentMeta = currentItem.getItemMeta();
                 HelperFuncs helperFuncs = new HelperFuncs();
-                if (Arrays.asList(customItems.dfEnchants).contains(event.getCursor().getItemMeta().getLore().get(0).split(" ")[0])) {
+                if (Arrays.asList(customItems.dfEnchants).contains(event.getCursor().getItemMeta().getLore().get(0).split(" ")[0].substring(2))) {
                     if (event.getCursor().getEnchantmentLevel(Enchantment.getByName(event.getCursor().getItemMeta().getLore().get(0).split(" ")[0].substring(2))) ==
                             Integer.parseInt(event.getCursor().getItemMeta().getLore().get(0).split(" ")[1])) {
                         currentItem.addUnsafeEnchantment(Enchantment.getByName(event.getCursor().getItemMeta().getLore().get(0).split(" ")[0].substring(2)),

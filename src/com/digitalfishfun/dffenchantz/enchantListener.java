@@ -42,6 +42,26 @@ public class enchantListener implements Runnable, Listener {
                 int enchantLvl = helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getBoots()), "Lightweight");
                 p.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 20, enchantLvl-1), true);
             }
+            //Tank
+            int akLvl = 0;
+            if (helperFuncs.plzNoNull(p.getInventory().getHelmet()) && helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getHelmet()), "Tank") > 0) {
+                akLvl += helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getHelmet()), "Tank");
+            }
+            if (helperFuncs.plzNoNull(p.getInventory().getChestplate()) && helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getChestplate()), "Tank") > 0) {
+                akLvl += helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getChestplate()), "Tank");
+            }
+            if (helperFuncs.plzNoNull(p.getInventory().getLeggings()) && helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getLeggings()), "Tank") > 0) {
+                akLvl += helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getLeggings()), "Tank");
+            }
+            if (helperFuncs.plzNoNull(p.getInventory().getBoots()) && helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getBoots()), "Tank") > 0) {
+                akLvl += helperFuncs.enchantLvl(helperFuncs.getEnchants(p.getInventory().getBoots()), "Tank");
+            }
+            if (akLvl > 0) {
+                p.setMaxHealth(20.0+(double)akLvl);
+            }
+            else {
+                p.setMaxHealth(20.0);
+            }
         }
     }
 

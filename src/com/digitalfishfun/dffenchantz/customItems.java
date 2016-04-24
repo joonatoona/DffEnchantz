@@ -5,10 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by joonatoona on 4/22/16.
@@ -29,6 +26,7 @@ public class customItems {
 
     //Enchant Strings
     public static String weaponEnchant = ChatColor.GRAY+"[WEAPON ENCHANTMENT]";
+    public static String bowEnchant = ChatColor.GRAY+"[BOW ENCHANTMENT]";
     public static String helmEnchant = ChatColor.GRAY+"[HELMET ENCHANTMENT]";
     public static String chestplateEnchant = ChatColor.GRAY+"[CHESTPLATE ENCHANTMENT]";
     public static String legsEnchant = ChatColor.GRAY+"[LEGGINGS ENCHANTMENT]";
@@ -36,24 +34,28 @@ public class customItems {
     public static String gearEnchant = ChatColor.GRAY+"§7[ARMOR ENCHANTMENT]";
     public static String allEnchant = ChatColor.GRAY+"§7[ENCHANTMENT]";
     public static String toolEnchant = ChatColor.GRAY+"§7[TOOL ENCHANTMENT]";
+
     public static Map<String, Integer> lvlDict = new HashMap<String, Integer>();
     public static Map<String, String> enchantDict = new HashMap<String, String>();
     public static Map<String, ChatColor> colorDict = new HashMap<String, ChatColor>();
+    public static Map<String, String> descDict = new HashMap<String, String>();
 
     //Enchant Arrays
-    public static String[] t1Enchants = {"DAMAGE_ALL", "DURABILITY", "FIRE_ASPECT", "SILK_TOUCH", "LOOT_BONUS_MOBS", "LOOT_BONUS_BLOCKS", "PROTECTION_ENVIRONMENTAL",
-            "Glowing", "DIG_SPEED", "KNOCKBACK"};
-    public static String[] t3Enchants = {"Wither", "Bouncy", "Sanik", "Frozen"};
+    public static String[] t1Enchants = {"DAMAGE_ALL", "DURABILITY", "FIRE_ASPECT", "SILK_TOUCH", "LOOT_BONUS_MOBS",
+            "LOOT_BONUS_BLOCKS", "PROTECTION_ENVIRONMENTAL", "Glowing", "DIG_SPEED", "KNOCKBACK"};
+    public static String[] t3Enchants = {"Wither", "Bouncy", "Sanik", "Frozen", "Tank"};
     public static String[] t5Enchants = {"Inquisitive", "Lifesteal", "Lightweight", "Anti-Knockback"};
 
     //Arrays
-    public static String[] dfEnchants = {"DAMAGE_ALL", "DURABILITY", "FIRE_ASPECT", "SILK_TOUCH", "LOOT_BONUS_MOBS", "LOOT_BONUS_BLOCKS", "PROTECTION_ENVIRONMENTAL", "KNOCKBACK"};
+    public static String[] dfEnchants = {"DAMAGE_ALL", "DURABILITY", "FIRE_ASPECT", "SILK_TOUCH", "LOOT_BONUS_MOBS", "LOOT_BONUS_BLOCKS",
+            "PROTECTION_ENVIRONMENTAL", "KNOCKBACK"};
     public static String[] weapons = {"DIAMOND_SWORD", "GOLD_SWORD", "IRON_SWORD", "STONE_SWORD", "WOOD_SWORD",
             "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
     public static String[] tools = {"DIAMOND_PICKAXE", "GOLD_PICKAXE", "IRON_PICKAXE", "STONE_PICKAXE", "LEATHER_PICKAXE",
             "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
     public static String[] helms = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET"};
-    public static String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE"};
+    public static String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE",
+            "LEATHER_CHESTPLATE"};
     public static String[] legs = {"DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS"};
     public static String[] boots = {"DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
     public static String[] gear = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET",
@@ -126,10 +128,31 @@ public class customItems {
         enchantDict.put("Sanik", bootsEnchant);
         enchantDict.put("Wither", weaponEnchant);
         enchantDict.put("Frozen", weaponEnchant);
+        enchantDict.put("Tank", weaponEnchant);
         enchantDict.put("Inquisitive", weaponEnchant);
         enchantDict.put("Lifesteal", weaponEnchant);
         enchantDict.put("Lightweight", weaponEnchant);
         enchantDict.put("Anti-Knockback", gearEnchant);
+
+        descDict.put("DAMAGE_ALL", ChatColor.GOLD+"Weapons Deal More Damage");
+        descDict.put("FIRE_ASPECT", ChatColor.GOLD+"Weapons Set Enemy On Fire");
+        descDict.put("DURABILITY", ChatColor.GOLD+"Causes Items To Lose Durability Slower");
+        descDict.put("Glowing", ChatColor.GOLD+"Gives Permanent Night Vision");
+        descDict.put("SILK_TOUCH", ChatColor.GOLD+"Blocks Drop Their Original States");
+        descDict.put("LOOT_BONUS_MOBS", ChatColor.GOLD+"Mobs Drop More Items");
+        descDict.put("LOOT_BONUS_BLOCKS", ChatColor.GOLD+"Blocks Drop More Items");
+        descDict.put("DIG_SPEED", ChatColor.GOLD+"Tools Mine Faster");
+        descDict.put("PROTECTION_ENVIRONMENTAL", ChatColor.GOLD+"Gear Blocks More Damage");
+        descDict.put("KNOCKBACK", ChatColor.GOLD+"Attack Knockback Is Increased");
+        descDict.put("Bouncy", ChatColor.GOLD+"Increases Your Jump Height");
+        descDict.put("Sanik", ChatColor.GOLD+"Increases Your Movement Speed");
+        descDict.put("Wither", ChatColor.GOLD+"Chance To Wither Your Opponent");
+        descDict.put("Frozen", ChatColor.GOLD+"Chance To Freeze Your Opponent");
+        descDict.put("Tank", ChatColor.GOLD+"Increases Your Max Health");
+        descDict.put("Inquisitive", ChatColor.GOLD+"Mobs Drop More XP");
+        descDict.put("Lifesteal", ChatColor.GOLD+"Chance To Steal Life From Your Opponent");
+        descDict.put("Lightweight", ChatColor.GOLD+"Increases Your Swing Speed");
+        descDict.put("Anti-Knockback", ChatColor.GOLD+"BE A HEKER!!!");
 
         //Lvl Dict
         lvlDict.put("DAMAGE_ALL", 5);
@@ -146,6 +169,7 @@ public class customItems {
         lvlDict.put("Bouncy", 2);
         lvlDict.put("Sanik", 3);
         lvlDict.put("Frozen", 4);
+        lvlDict.put("Tank", 3);
         lvlDict.put("Inquisitive", 5);
         lvlDict.put("Lifesteal", 5);
         lvlDict.put("Lightweight", 3);
@@ -166,9 +190,14 @@ public class customItems {
         colorDict.put("Frozen", ChatColor.AQUA);
         colorDict.put("Bouncy", ChatColor.AQUA);
         colorDict.put("Sanik", ChatColor.AQUA);
+        colorDict.put("Tank", ChatColor.AQUA);
         colorDict.put("Inquisitive", ChatColor.DARK_RED);
         colorDict.put("Lifesteal", ChatColor.DARK_RED);
         colorDict.put("Lightweight", ChatColor.DARK_RED);
         colorDict.put("Anti-Knockback", ChatColor.DARK_RED);
+
+        allMat.addAll(Arrays.asList(weapons));
+        allMat.addAll(Arrays.asList(tools));
+        allMat.addAll(Arrays.asList(gear));
     }
 }

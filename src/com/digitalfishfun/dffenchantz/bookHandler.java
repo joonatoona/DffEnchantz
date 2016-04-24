@@ -36,6 +36,7 @@ public class bookHandler implements Listener {
                 newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
                 newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
+                newLore.add(customItems.descDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
                 ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();
@@ -64,6 +65,7 @@ public class bookHandler implements Listener {
                 newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
                 newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
+                newLore.add(customItems.descDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
                 ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();
@@ -92,6 +94,7 @@ public class bookHandler implements Listener {
                 newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
                 newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
+                newLore.add(customItems.descDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
                 ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();

@@ -1,6 +1,7 @@
 package com.digitalfishfun.dffenchantz;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -46,9 +47,12 @@ public class Main extends JavaPlugin {
                 ItemStack newBook = new ItemStack(Material.ENCHANTED_BOOK);
                 ItemMeta newMeta = newBook.getItemMeta();
                 List<String> newLore = new ArrayList<String>();
-                newMeta.setDisplayName("§7"+args[0]+" "+args[1]+" Book");
-                newLore.add("§7"+args[0]+" "+args[1]);
-                newLore.add("§7[ENCHANTMENT]");
+                newMeta.setDisplayName(customItems.colorDict.get(args[0])+""+args[0]+" "+args[1]+" Book");
+                newLore.add(customItems.colorDict.get(args[0])+""+args[0]+" "+args[1]);
+                newLore.add(ChatColor.GREEN+"100% Success Rate");
+                newLore.add(ChatColor.RED+"0% Destroy Rate");
+                newLore.add(customItems.allEnchant);
+                newLore.add(customItems.descDict.get(args[0]));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
                 Player player = (Player) sender;
