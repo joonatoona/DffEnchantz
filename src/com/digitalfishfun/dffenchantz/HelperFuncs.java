@@ -1,7 +1,6 @@
 package com.digitalfishfun.dffenchantz;
 
 import org.apache.commons.lang.math.NumberUtils;
-import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -32,5 +31,15 @@ public class HelperFuncs {
             }
         }
         return 0;
+    }
+    public boolean plzNoNull(ItemStack item) {
+        if (item != null) {
+            if (item.hasItemMeta()) {
+                if (item.getItemMeta().hasLore()) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

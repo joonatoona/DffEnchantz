@@ -1,7 +1,6 @@
 package com.digitalfishfun.dffenchantz;
 
-import net.minecraft.server.v1_9_R1.Blocks;
-import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.event.EventHandler;
@@ -30,16 +29,21 @@ public class bookHandler implements Listener {
                 int rndIndex = random.nextInt(customItems.t1Enchants.length);
                 String cEnchant = customItems.t1Enchants[rndIndex];
                 int rndMax = random.nextInt(customItems.lvlDict.get(cEnchant))+1;
-                newMeta.setDisplayName(cEnchant+" "+rndMax+" Book");
-                newLore.add(cEnchant+" "+rndMax);
+                newMeta.setDisplayName(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax+" Book");
+                newLore.add(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax);
                 int scRate = random.nextInt(100)+1;
                 int dsRate = random.nextInt(100)+1;
-                newLore.add("§aSuccess Rate: "+scRate+"%");
-                newLore.add("§4Destroy Rate: "+dsRate+"%");
+                newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
+                newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
-                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();
+                newStack.setAmount(newStack.getAmount()-1);
+                if (newStack.getAmount() < 1) {
+                    newStack = new ItemStack(Material.AIR);
+                }
+                event.getPlayer().getInventory().setItemInMainHand(newStack);
                 event.getPlayer().getInventory().addItem(newBook);
                 event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
             }
@@ -53,16 +57,21 @@ public class bookHandler implements Listener {
                 int rndIndex = random.nextInt(customItems.t3Enchants.length);
                 String cEnchant = customItems.t3Enchants[rndIndex];
                 int rndMax = random.nextInt(customItems.lvlDict.get(cEnchant))+1;
-                newMeta.setDisplayName(cEnchant+" "+rndMax+" Book");
-                newLore.add(cEnchant+" "+rndMax);
+                newMeta.setDisplayName(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax+" Book");
+                newLore.add(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax);
                 int scRate = random.nextInt(100)+1;
                 int dsRate = random.nextInt(100)+1;
-                newLore.add("§aSuccess Rate: "+scRate+"%");
-                newLore.add("§4Destroy Rate: "+dsRate+"%");
+                newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
+                newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
-                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();
+                newStack.setAmount(newStack.getAmount()-1);
+                if (newStack.getAmount() < 1) {
+                    newStack = new ItemStack(Material.AIR);
+                }
+                event.getPlayer().getInventory().setItemInMainHand(newStack);
                 event.getPlayer().getInventory().addItem(newBook);
                 event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
             }
@@ -76,16 +85,21 @@ public class bookHandler implements Listener {
                 int rndIndex = random.nextInt(customItems.t5Enchants.length);
                 String cEnchant = customItems.t5Enchants[rndIndex];
                 int rndMax = random.nextInt(customItems.lvlDict.get(cEnchant))+1;
-                newMeta.setDisplayName(cEnchant+" "+rndMax+" Book");
-                newLore.add(cEnchant+" "+rndMax);
+                newMeta.setDisplayName(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax+" Book");
+                newLore.add(customItems.colorDict.get(cEnchant)+cEnchant+" "+rndMax);
                 int scRate = random.nextInt(100)+1;
                 int dsRate = random.nextInt(100)+1;
-                newLore.add("§aSuccess Rate: "+scRate+"%");
-                newLore.add("§4Destroy Rate: "+dsRate+"%");
+                newLore.add(ChatColor.GREEN+""+scRate+"%"+" Success rate");
+                newLore.add(ChatColor.RED+""+dsRate+"%"+" Destroy rate");
                 newLore.add(customItems.enchantDict.get(cEnchant));
                 newMeta.setLore(newLore);
                 newBook.setItemMeta(newMeta);
-                event.getPlayer().getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                ItemStack newStack = event.getPlayer().getInventory().getItemInMainHand();
+                newStack.setAmount(newStack.getAmount()-1);
+                if (newStack.getAmount() < 1) {
+                    newStack = new ItemStack(Material.AIR);
+                }
+                event.getPlayer().getInventory().setItemInMainHand(newStack);
                 event.getPlayer().getInventory().addItem(newBook);
                 event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, 100, 100);
             }

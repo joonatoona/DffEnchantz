@@ -84,8 +84,8 @@ public class ClickListener implements Listener {
                 ItemStack currentItem = event.getCurrentItem();
                 ItemMeta currentMeta = currentItem.getItemMeta();
                 List<String> currentLore = new ArrayList<String>();
-                if (event.getCursor().getItemMeta().getLore().get(0).equals(currentMeta.getLore().get(0)) &&
-                        Integer.parseInt(event.getCursor().getItemMeta().getLore().get(0).split(" ")[1]) < customItems.lvlDict.get(currentMeta.getLore().get(0).split(" ")[0])) {
+                if (event.getCursor().getItemMeta().getLore().get(0).substring(2).equals(currentMeta.getLore().get(0).substring(2)) &&
+                        Integer.parseInt(event.getCursor().getItemMeta().getLore().get(0).split(" ")[1]) < customItems.lvlDict.get(currentMeta.getLore().get(0).split(" ")[0].substring(2))) {
                     currentLore.add(currentMeta.getLore().get(0).split(" ")[0] + " " +
                             (Integer.parseInt(currentMeta.getLore().get(0).split(" ")[1]) + 1));
                     currentLore.add(currentMeta.getLore().get(1));
