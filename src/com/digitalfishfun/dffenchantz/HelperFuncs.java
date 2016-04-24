@@ -17,6 +17,7 @@ public class HelperFuncs {
         if (item != null && item.hasItemMeta() && item.getItemMeta().hasLore()) {
             for (int i = 0; i < item.getItemMeta().getLore().size(); i++) {
                 cParse = item.getItemMeta().getLore().get(i).split(" ");
+                cParse[0] = cParse[0].substring(2);
                 if (cParse.length == 2 && NumberUtils.isNumber(cParse[1])) {
                     cEnchants.add(cParse);
                 }

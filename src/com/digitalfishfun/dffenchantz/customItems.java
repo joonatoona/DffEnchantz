@@ -5,22 +5,61 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by joonatoona on 4/22/16.
  */
 public class customItems {
 
-    public static ItemStack t1book = new ItemStack(Material.ENCHANTED_BOOK);
-    public static ItemStack t3book = new ItemStack(Material.ENCHANTED_BOOK);
-    public static ItemStack t5book = new ItemStack(Material.ENCHANTED_BOOK);
+    //Shop Books
+    public static ItemStack t1book = new ItemStack(Material.BOOK);
+    public static ItemStack t3book = new ItemStack(Material.BOOK);
+    public static ItemStack t5book = new ItemStack(Material.BOOK);
 
     public static ItemStack nope = new ItemStack(Material.BARRIER);
 
-    public static ItemStack m1book = new ItemStack(Material.ENCHANTED_BOOK);
-    public static ItemStack m3book = new ItemStack(Material.ENCHANTED_BOOK);
-    public static ItemStack m5book = new ItemStack(Material.ENCHANTED_BOOK);
+    //Mystery Books
+    public static ItemStack m1book = new ItemStack(Material.BOOK);
+    public static ItemStack m3book = new ItemStack(Material.BOOK);
+    public static ItemStack m5book = new ItemStack(Material.BOOK);
+
+    //Enchant Strings
+    public static String weaponEnchant = "§7[WEAPON ENCHANTMENT]";
+    public static String helmEnchant = "§7[HELMET ENCHANTMENT]";
+    public static String chestplateEnchant = "§7[CHESTPLATE ENCHANTMENT]";
+    public static String legsEnchant = "§7[LEGGINGS ENCHANTMENT]";
+    public static String bootsEnchant = "§7[BOOTS ENCHANTMENT]";
+    public static String gearEnchant = "§7[ARMOR ENCHANTMENT]";
+    public static String allEnchant = "§7[ENCHANTMENT]";
+    public static String toolEnchant = "§7[TOOL ENCHANTMENT]";
+    public static Map<String, Integer> lvlDict = new HashMap<String, Integer>();
+    public static Map<String, String> enchantDict = new HashMap<String, String>();
+
+    //Enchant Arrays
+    public static String[] t1Enchants = {"§7DAMAGE_ALL", "§7DURABILITY", "§7FIRE_ASPECT", "§7SILK_TOUCH", "§7LOOT_BONUS_MOBS", "§7LOOT_BONUS_BLOCKS", "§7PROTECTION_ENVIRONMENTAL",
+            "§7Glowing", "§7DIG_SPEED", "§7KNOCKBACK"};
+    public static String[] t3Enchants = {"§eWither", "§eBouncy", "§eSanik"};
+    public static String[] t5Enchants = {"§cInquisitive", "§cLifesteal", "§cLightweight"};
+
+    //Arrays
+    public static String[] dfEnchants = {"§7DAMAGE_ALL", "§7DURABILITY", "§7FIRE_ASPECT", "§7SILK_TOUCH", "§7LOOT_BONUS_MOBS", "§7LOOT_BONUS_BLOCKS", "§7PROTECTION_ENVIRONMENTAL", "§7KNOCKBACK"};
+    public static String[] weapons = {"DIAMOND_SWORD", "GOLD_SWORD", "IRON_SWORD", "STONE_SWORD", "WOOD_SWORD",
+            "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
+    public static String[] tools = {"DIAMOND_PICKAXE", "GOLD_PICKAXE", "IRON_PICKAXE", "STONE_PICKAXE", "LEATHER_PICKAXE",
+            "DIAMOND_AXE", "GOLD_AXE", "IRON_AXE", "STONE_AXE", "WOOD_AXE"};
+    public static String[] helms = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET"};
+    public static String[] chestplates = {"DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE"};
+    public static String[] legs = {"DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS"};
+    public static String[] boots = {"DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
+    public static String[] gear = {"DIAMOND_HELMET", "GOLD_HELMET", "IRON_HELMET", "CHAINMAIL_HELMET", "LEATHER_HELMET",
+            "DIAMOND_CHESTPLATE", "GOLD_CHESTPLATE", "IRON_CHESTPLATE", "CHAINMAIL_CHESTPLATE", "LEATHER_CHESTPLATE",
+            "DIAMOND_LEGGINGS", "GOLD_LEGGINGS", "IRON_LEGGINGS", "CHAINMAIL_LEGGINGS", "LEATHER_LEGGINGS",
+            "DIAMOND_BOOTS", "GOLD_BOOTS", "IRON_BOOTS", "CHAINMAIL_BOOTS", "LEATHER_BOOTS"};
+
+    public static ArrayList<String> allMat = new ArrayList<String>();
 
     static {
         //Mystery Books
@@ -69,5 +108,41 @@ public class customItems {
         t5lore.add("§7(Click to purchase)");
         t5meta.setLore(t5lore);
         t5book.setItemMeta(t5meta);
+
+        //Enchant Dict
+        enchantDict.put("§7DAMAGE_ALL", weaponEnchant);
+        enchantDict.put("§7FIRE_ASPECT", weaponEnchant);
+        enchantDict.put("§7DURABILITY", allEnchant);
+        enchantDict.put("§7Glowing", helmEnchant);
+        enchantDict.put("§7SILK_TOUCH", toolEnchant);
+        enchantDict.put("§7LOOT_BONUS_MOBS", weaponEnchant);
+        enchantDict.put("§7LOOT_BONUS_BLOCKS", toolEnchant);
+        enchantDict.put("§7DIG_SPEED", toolEnchant);
+        enchantDict.put("§7PROTECTION_ENVIRONMENTAL", gearEnchant);
+        enchantDict.put("§7KNOCKBACK", allEnchant);
+        enchantDict.put("§eBouncy", bootsEnchant);
+        enchantDict.put("§eSanik", bootsEnchant);
+        enchantDict.put("§eWither", weaponEnchant);
+        enchantDict.put("§cInquisitive", weaponEnchant);
+        enchantDict.put("§cLifesteal", weaponEnchant);
+        enchantDict.put("§cLightweight", weaponEnchant);
+
+        //Lvl Dict
+        lvlDict.put("§7DAMAGE_ALL", 5);
+        lvlDict.put("§7FIRE_ASPECT", 3);
+        lvlDict.put("§7DURABILITY", 4);
+        lvlDict.put("§7Glowing", 1);
+        lvlDict.put("§7SILK_TOUCH", 1);
+        lvlDict.put("§7LOOT_BONUS_MOBS", 4);
+        lvlDict.put("§7LOOT_BONUS_BLOCKS", 3);
+        lvlDict.put("§7PROTECTION_ENVIRONMENTAL", 4);
+        lvlDict.put("§7DIG_SPEED", 5);
+        lvlDict.put("§7KNOCKBACK", 3);
+        lvlDict.put("§eWither", 3);
+        lvlDict.put("§eBouncy", 2);
+        lvlDict.put("§eSanik", 3);
+        lvlDict.put("§cInquisitive", 5);
+        lvlDict.put("§cLifesteal", 5);
+        lvlDict.put("§cLightweight", 3n);
     }
 }

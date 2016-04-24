@@ -7,7 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ee697e-037f-4c6f-8ad7-62869e6fba42" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantListener.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantGlowing.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantInquis.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantLifesteal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantWither.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantLifesteal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/ClickListener.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/ClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/HelperFuncs.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/HelperFuncs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/Main.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/bookHandler.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/bookHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/customItems.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/customItems.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantShop.class" afterPath="$PROJECT_DIR$/out/production/DffEnchantz/com/digitalfishfun/dffenchantz/enchantShop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java" afterPath="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DffEnchantz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,24 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClickListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClickListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4181646">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3049#3057#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="121" selection-start-line="110" selection-start-column="121" selection-end-line="110" selection-end-column="121" />
+              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,47 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enchantLifesteal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantLifesteal.java">
+      <file leaf-file-name="enchantListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enchantWither.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customItems.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enchantInquis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,12 +110,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+      <file leaf-file-name="bookHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customItems.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9366131">
+              <caret line="145" column="39" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3591#3599#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,17 +162,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/armorSwap.java" />
-        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java" />
         <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java" />
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantBouncy.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantSanik.java" />
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantLifesteal.java" />
-        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java" />
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java" />
         <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java" />
-        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantListener.java" />
+        <option value="$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java" />
       </list>
     </option>
   </component>
@@ -228,8 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,7 +270,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,7 +465,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,13 +474,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17609392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -510,13 +500,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299539" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -539,6 +529,77 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3591#3599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -565,17 +626,6 @@
           <caret line="91" column="45" selection-start-line="91" selection-start-column="45" selection-end-line="91" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,22 +640,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="67" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3591#3599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,17 +694,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,22 +708,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="67" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3591#3599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +762,6 @@
           <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +789,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +816,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +843,6 @@
           <caret line="16" column="65" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -839,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +870,6 @@
           <caret line="16" column="65" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,58 +891,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantGlowing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="35" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/HelperFuncs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantLifesteal.java">
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantInquis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,7 +931,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantShop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -953,40 +941,30 @@
     <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/bookHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="121" selection-start-line="110" selection-start-column="121" selection-end-line="110" selection-end-column="121" />
+          <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/enchantWither.java">
+    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/customItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.9366131">
+          <caret line="145" column="39" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/digitalfishfun/dffenchantz/ClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4181646">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3049#3057#0" expanded="true" />
+            <element signature="e#3591#3599#0" expanded="true" />
           </folding>
         </state>
       </provider>

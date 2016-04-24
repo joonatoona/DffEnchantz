@@ -22,13 +22,11 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new enchantShop(), this);
-        getServer().getPluginManager().registerEvents(new enchantInquis(), this);
+        getServer().getPluginManager().registerEvents(new enchantListener(), this);
         getServer().getPluginManager().registerEvents(new bookHandler(), this);
         getServer().getPluginManager().registerEvents(new ClickListener(), this);
         getServer().getPluginManager().registerEvents(new armorSwap(), this);
-        getServer().getPluginManager().registerEvents(new enchantLifesteal(), this);
-        getServer().getPluginManager().registerEvents(new enchantWither(), this);
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new enchantGlowing(), (long) 2, (long) 2);
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new enchantListener(), (long) 2, (long) 2);
     }
 
     @Override

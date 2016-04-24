@@ -36,7 +36,7 @@ public class enchantShop implements Listener {
         ItemStack clicked = event.getCurrentItem();
         Inventory inventory = event.getInventory();
         if (inventory.getName().equals(enchantShop.getName())) {
-            if (clicked.getType() == Material.ENCHANTED_BOOK && clicked.getItemMeta().getDisplayName().equals(customItems.t1book.getItemMeta().getDisplayName())) {
+            if (clicked.getType() == customItems.t1book.getType() && clicked.getItemMeta().getDisplayName().equals(customItems.t1book.getItemMeta().getDisplayName())) {
                 if (player.getTotalExperience() >= 500) {
                     player.giveExp(-500);
                     player.setTotalExperience(player.getTotalExperience());
@@ -44,7 +44,7 @@ public class enchantShop implements Listener {
                     player.playSound(player.getLocation(), Sound.ENTITY_HORSE_BREATHE, 100, 100);
                 }
             }
-            if (clicked.getType() == Material.ENCHANTED_BOOK && clicked.getItemMeta().getDisplayName().equals(customItems.t3book.getItemMeta().getDisplayName())) {
+            if (clicked.getType() == customItems.t3book.getType() && clicked.getItemMeta().getDisplayName().equals(customItems.t3book.getItemMeta().getDisplayName())) {
                 if (player.getTotalExperience() >= 10000) {
                     player.giveExp(-10000);
                     player.setTotalExperience(player.getTotalExperience());
@@ -52,7 +52,7 @@ public class enchantShop implements Listener {
                     player.playSound(player.getLocation(), Sound.ENTITY_HORSE_BREATHE, 100, 100);
                 }
             }
-            if (clicked.getType() == Material.ENCHANTED_BOOK && clicked.getItemMeta().getDisplayName().equals(customItems.t5book.getItemMeta().getDisplayName())) {
+            if (clicked.getType() == customItems.t5book.getType() && clicked.getItemMeta().getDisplayName().equals(customItems.t5book.getItemMeta().getDisplayName())) {
                 if (player.getTotalExperience() >= 50000) {
                     player.giveExp(-50000);
                     player.setTotalExperience(player.getTotalExperience());
